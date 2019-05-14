@@ -31,8 +31,12 @@ def main():
 
     x, y = load()
     xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size = 0.3, random_state = 0)
-    concrete_strategy_a = cl.SvmClassifier()
-    context = cl.Context(concrete_strategy_a)
+    # concrete_strategy = cl.SvmClassifier()
+    # concrete_strategy = cl.DecisionTree()
+    # concrete_strategy = cl.NaiveBayes()
+    # concrete_strategy = cl.KnnClassifier()
+    concrete_strategy = cl.RandomForest()
+    context = cl.Context(concrete_strategy)
     context.context_interface(xTrain, yTrain, xTest, yTest)
 
 if __name__ == "__main__":
