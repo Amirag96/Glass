@@ -8,7 +8,8 @@ from scipy.stats import boxcox
 import classifiers as cl
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
 
 def load():
     #Reading dataset files and saving them as CSV
@@ -18,10 +19,11 @@ def load():
     # data.to_csv('dataset/glass1.csv',mode='a',index=False)
 
     data = pd.read_csv('dataset/glass.csv',delimiter=',')
+
     #6 classes:
     labels =['building_windows_float_processed',
              'building_windows_non_float_processed',
-             'vehicle_windows_float_processed',''
+             'vehicle_windows_float_processed','',
              'containers',
              'tableware',
              'headlamps']
@@ -32,7 +34,6 @@ def load():
     x = data.drop(['Type'],axis=1)
     # x = boxcox(x)
 
-    # xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size = 0.2, random_state = 0)
     return x,y
 
 def histogram(x):
@@ -81,15 +82,20 @@ def boxcox(X):
 def main():
 
     x, y = load()
-    c = x.columns.values
 
     # histogram(x)
+
     xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size = 0.3, random_state = 0)
 
-    # PreProcessing
-    min_max = MinMaxScaler()
-    X_train_minmax = min_max.fit_transform(xTrain)
-    X_test_minmax = min_max.fit_transform(xTest)
+    # PreProcessing(1)
+    sc_X = StandardScaler()
+    xTrain = sc_X.fit_transform(xTrain)
+    xTest = sc_X.transform(xTest)
+
+    # PreProcessing(2)
+    # min_max = MinMaxScaler()
+    # xTrain = min_max.fit_transform(xTrain)
+    # xTest = min_max.fit_transform(xTest)
 
     # concrete_strategy = cl.SvmClassifier()
     # concrete_strategy = cl.DecisionTree()
@@ -99,8 +105,6 @@ def main():
     concrete_strategy = cl.RandomForest()
     context = cl.Context(concrete_strategy)
     context.context_interface(xTrain, yTrain, xTest, yTest)
-
-    # context.context_interface(X_train_minmax, yTrain, X_test_minmax, yTest)
 
 
 if __name__ == "__main__":

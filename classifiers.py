@@ -85,12 +85,3 @@ class RandomForest(Strategy):
         yPred = rfclassifier.predict(xTest)
 
         Result(yTest,yPred)
-
-class LogisticReg(Strategy):
-    def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
-        log = LogisticRegression(random_state=0, solver='lbfgs',multi_class = 'multinomial')
-        log.fit(xTrain, yTrain)
-        yPred = log.predict(xTest)
-
-        Result(yTest,yPred)
-
