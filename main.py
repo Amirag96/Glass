@@ -30,7 +30,7 @@ def load():
     y = data[['Type']]
     #axis = 1 (drop column)
     x = data.drop(['Type'],axis=1)
-    x = boxcox(x)
+    # x = boxcox(x)
 
     # xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size = 0.2, random_state = 0)
     return x,y
@@ -82,7 +82,6 @@ def main():
 
     x, y = load()
     c = x.columns.values
-    x = boxcox(x)
 
     # histogram(x)
     xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size = 0.3, random_state = 0)
@@ -97,9 +96,9 @@ def main():
     # concrete_strategy = cl.NaiveBayes()
     # concrete_strategy = cl.KnnClassifier()
 
-    # concrete_strategy = cl.RandomForest()
-    # context = cl.Context(concrete_strategy)
-    # context.context_interface(xTrain, yTrain, xTest, yTest)
+    concrete_strategy = cl.RandomForest()
+    context = cl.Context(concrete_strategy)
+    context.context_interface(xTrain, yTrain, xTest, yTest)
 
     # context.context_interface(X_train_minmax, yTrain, X_test_minmax, yTest)
 
