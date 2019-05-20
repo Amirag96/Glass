@@ -1,5 +1,4 @@
 import abc
-
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.naive_bayes import GaussianNB
@@ -7,6 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from tensorflow import confusion_matrix
+from sklearn.linear_model import LogisticRegression
 
 
 class Context:
@@ -69,6 +69,7 @@ class KnnClassifier(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
         knnclassifier = KNeighborsClassifier(n_neighbors=1)
         knnclassifier.fit(xTrain, yTrain)
+        print(yTrain.Type.value_counts() / yTrain.Type.count())
         yPred = knnclassifier.predict(xTest)
 
         Result(yTest, yPred)
@@ -78,9 +79,18 @@ class RandomForest(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
 
         rfclassifier = RandomForestClassifier(n_estimators=100 ,random_state=0)
+        # rfclassifier =  RandomForestClassifier(criterion='gini', n_estimators=100, min_samples_leaf=1, min_samples_split=4, random_state=1,n_jobs=-1)
         #rfclassifier = RandomForestClassifier(n_estimators=100, max_depth=2,random_state = 0)
         rfclassifier.fit(xTrain, yTrain)
         yPred = rfclassifier.predict(xTest)
+
+        Result(yTest,yPred)
+
+class LogisticReg(Strategy):
+    def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
+        log = LogisticRegression(random_state=0, solver='lbfgs',multi_class = 'multinomial')
+        log.fit(xTrain, yTrain)
+        yPred = log.predict(xTest)
 
         Result(yTest,yPred)
 
