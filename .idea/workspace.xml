@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9141864c-4aa3-4a15-a4eb-fa64ee625ccd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/glass1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,9 +16,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Glass$try.coverage" NAME="try Coverage Results" MODIFIED="1558366525849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Glass$classifiers.coverage" NAME="classifiers Coverage Results" MODIFIED="1558322836476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Glass$reg.coverage" NAME="reg Coverage Results" MODIFIED="1558366178760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Glass$main.coverage" NAME="main Coverage Results" MODIFIED="1558366660085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Glass$classifiers.coverage" NAME="classifiers Coverage Results" MODIFIED="1558421791940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Glass$main.coverage" NAME="main Coverage Results" MODIFIED="1558467105003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,14 +39,19 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="90" selection-start-line="90" selection-end-line="92" selection-end-column="33" />
+            <state relative-caret-position="118">
+              <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#1228#1339#0" />
-                <element signature="e#1363#1661#0" />
-                <element signature="e#1686#1932#0" />
-                <element signature="e#1953#2693#0" />
+                <element signature="e#2206#2481#0" />
+                <element signature="e#2502#2691#0" />
+                <element signature="e#2917#3034#0" />
+                <element signature="e#3071#3204#0" />
+                <element signature="e#3244#3366#0" />
+                <element signature="e#3406#3533#0" />
+                <element signature="e#3556#3762#0" />
+                <element signature="e#3786#4084#0" />
+                <element signature="e#4109#4415#0" />
               </folding>
             </state>
           </provider>
@@ -53,17 +60,10 @@
       <file leaf-file-name="classifiers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classifiers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="74">
+              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
               <folding>
-                <element signature="e#360#535#0" />
-                <element signature="e#567#1217#0" />
-                <element signature="e#1263#1344#0" />
-                <element signature="e#1381#1723#0" />
-                <element signature="e#1760#1969#0" />
-                <element signature="e#2004#2187#0" />
-                <element signature="e#2225#2529#0" />
-                <element signature="e#2499#2849#0" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,16 +78,30 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fit</find>
+      <find>seconds</find>
+      <find>plt</find>
+      <find>compare</find>
+      <find>data_Standard</find>
+      <find>ravel</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>data_Normalizer</replace>
+      <replace>data_Standard</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/classifiers.py" />
         <option value="$PROJECT_DIR$/reg.py" />
         <option value="$PROJECT_DIR$/try.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/classifiers.py" />
       </list>
     </option>
   </component>
@@ -100,7 +114,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="43" />
     <option name="width" value="1346" />
     <option name="height" value="728" />
@@ -110,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +140,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,6 +152,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Edownloads\PycharmProjects\Github\Glass\dataset" />
       <recent name="E:\Edownloads\PycharmProjects\Github\Glass" />
     </key>
   </component>
@@ -239,9 +254,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.classifiers" />
         <item itemvalue="Python.try" />
         <item itemvalue="Python.reg" />
-        <item itemvalue="Python.classifiers" />
       </list>
     </recent_temporary>
   </component>
@@ -276,14 +291,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3267974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.501634" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.33333334" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.25718608" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.09455371" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.74583966" />
-      <window_info id="Structure" order="1" sideWeight="0.50242716" side_tool="true" visible="true" weight="0.25340393" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.74281394" />
+      <window_info id="Structure" order="1" sideWeight="0.501634" side_tool="true" weight="0.25340393" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -292,6 +306,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,20 +317,54 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="80" selection-start-line="121" selection-start-column="80" selection-end-line="121" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#2206#2481#0" />
+            <element signature="e#2502#2691#0" />
+            <element signature="e#2917#3034#0" />
+            <element signature="e#3071#3204#0" />
+            <element signature="e#3244#3366#0" />
+            <element signature="e#3406#3533#0" />
+            <element signature="e#3556#3762#0" />
+            <element signature="e#3786#4084#0" />
+            <element signature="e#4109#4415#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifiers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="58" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1228#1339#0" />
-            <element signature="e#1363#1661#0" />
-            <element signature="e#1686#1932#0" />
-            <element signature="e#1953#2693#0" />
+            <element signature="e#2206#2481#0" />
+            <element signature="e#2502#2691#0" />
+            <element signature="e#2917#3034#0" />
+            <element signature="e#3071#3204#0" />
+            <element signature="e#3244#3366#0" />
+            <element signature="e#3406#3533#0" />
+            <element signature="e#3556#3762#0" />
+            <element signature="e#3786#4084#0" />
+            <element signature="e#4109#4415#0" />
           </folding>
         </state>
       </provider>
@@ -325,27 +374,13 @@
         <state>
           <caret lean-forward="true" />
           <folding>
-            <element signature="e#360#535#0" />
-            <element signature="e#567#1217#0" />
-            <element signature="e#1263#1344#0" />
-            <element signature="e#1381#1723#0" />
-            <element signature="e#1760#1969#0" />
-            <element signature="e#2004#2187#0" />
-            <element signature="e#2225#2529#0" />
-            <element signature="e#2499#2849#0" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="234" selection-start-line="234" selection-end-line="234" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataset/glass.tag">
       <provider selected="true" editor-type-id="text-editor">
@@ -354,65 +389,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/glass.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/glass1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/glass.names">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/Index">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/glass.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_preprocessing_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preprocessing_template.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/preprocessing/data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="624" selection-start-line="624" selection-end-line="624" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/ensemble/forest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="475" selection-start-line="475" selection-end-line="475" />
         </state>
       </provider>
     </entry>
@@ -423,53 +404,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reg.py">
+    <entry file="file://$PROJECT_DIR$/reg.py" />
+    <entry file="file://$PROJECT_DIR$/try.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/ensemble/forest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="361" selection-start-line="361" selection-end-line="361" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/try.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/pandas/core/frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="2694" selection-start-line="2694" selection-end-line="2694" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/tree/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="387" selection-start-line="387" selection-end-line="387" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/glass.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/glass1.csv" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/model_selection/_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="547" column="38" lean-forward="true" selection-start-line="547" selection-start-column="38" selection-end-line="547" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/linear_model/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="467" column="36" lean-forward="true" selection-start-line="467" selection-start-column="36" selection-end-line="467" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="760" selection-start-line="760" selection-end-line="760" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24847">
+          <caret line="652" lean-forward="true" selection-start-line="652" selection-end-line="652" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/Python3.5/Lib/site-packages/seaborn/distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="1851" selection-start-line="1851" selection-end-line="1851" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="6503" selection-start-line="6503" selection-end-line="6503" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/Index">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/glass.names">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fig1.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/classifiers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="74">
+          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
           <folding>
-            <element signature="e#360#535#0" />
-            <element signature="e#567#1217#0" />
-            <element signature="e#1263#1344#0" />
-            <element signature="e#1381#1723#0" />
-            <element signature="e#1760#1969#0" />
-            <element signature="e#2004#2187#0" />
-            <element signature="e#2225#2529#0" />
-            <element signature="e#2499#2849#0" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4375" selection-start-line="4375" selection-end-line="4375" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/glass.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="90" selection-start-line="90" selection-end-line="92" selection-end-column="33" />
+        <state relative-caret-position="118">
+          <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1228#1339#0" />
-            <element signature="e#1363#1661#0" />
-            <element signature="e#1686#1932#0" />
-            <element signature="e#1953#2693#0" />
+            <element signature="e#2206#2481#0" />
+            <element signature="e#2502#2691#0" />
+            <element signature="e#2917#3034#0" />
+            <element signature="e#3071#3204#0" />
+            <element signature="e#3244#3366#0" />
+            <element signature="e#3406#3533#0" />
+            <element signature="e#3556#3762#0" />
+            <element signature="e#3786#4084#0" />
+            <element signature="e#4109#4415#0" />
           </folding>
         </state>
       </provider>

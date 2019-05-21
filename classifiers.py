@@ -1,4 +1,6 @@
 import abc
+from time import time
+import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.naive_bayes import GaussianNB
@@ -7,7 +9,6 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from tensorflow import confusion_matrix
 from sklearn.linear_model import LogisticRegression
-
 
 class Context:
     def __init__(self, strategy):
@@ -40,21 +41,22 @@ class SvmClassifier(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
         #Kernels [‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’]
         svclassifier = SVC(kernel='rbf')
+
         svclassifier.fit(xTrain, yTrain.values.ravel())
         yPred = svclassifier.predict(xTest)
         #joblib.dump(svclassifier, 'models/svmfs.joblib')
 
         Result(yTest,yPred)
 
-
 class DecisionTree(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
-        clf = DecisionTreeClassifier(random_state=0)
+        # clf = DecisionTreeClassifier(random_state=0)
+        clf = DecisionTreeClassifier(criterion="entropy")
+
         clf.fit(xTrain, yTrain)
         yPred = clf.predict(xTest)
 
         Result(yTest,yPred)
-
 
 class NaiveBayes(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
@@ -64,16 +66,13 @@ class NaiveBayes(Strategy):
 
         Result(yTest,yPred)
 
-
 class KnnClassifier(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
-        knnclassifier = KNeighborsClassifier(n_neighbors=1)
+        knnclassifier = KNeighborsClassifier(n_neighbors=5)
         knnclassifier.fit(xTrain, yTrain)
-        print(yTrain.Type.value_counts() / yTrain.Type.count())
         yPred = knnclassifier.predict(xTest)
 
         Result(yTest, yPred)
-
 
 class RandomForest(Strategy):
     def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
@@ -81,7 +80,16 @@ class RandomForest(Strategy):
         rfclassifier = RandomForestClassifier(n_estimators=100 ,random_state=0)
         # rfclassifier =  RandomForestClassifier(criterion='gini', n_estimators=100, min_samples_leaf=1, min_samples_split=4, random_state=1,n_jobs=-1)
         #rfclassifier = RandomForestClassifier(n_estimators=100, max_depth=2,random_state = 0)
-        rfclassifier.fit(xTrain, yTrain)
+        rfclassifier.fit(xTrain, yTrain.values.ravel())
         yPred = rfclassifier.predict(xTest)
 
         Result(yTest,yPred)
+
+class LogesticRegression(Strategy):
+    def algorithm_interface(self, xTrain, yTrain, xTest, yTest):
+        log = LogisticRegression()
+        log.fit(xTrain,yTrain)
+        yPred=log.predict(xTest)
+        print("Logestic Regression:")
+        Result(yTest,yPred)
+
